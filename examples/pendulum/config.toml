@@ -1,0 +1,32 @@
+[structure]
+number_of_inputs = 4
+number_of_outputs = 1
+percent_of_connected_inputs = 1.0
+outputs_activation = "Tanh"
+weight_std_dev = 0.1
+weight_cap = 1.0
+
+[[mutations]]
+type = "add_connection"
+chance = 0.1
+
+[[mutations]]
+type = "add_node"
+chance = 0.01
+activation_pool = [
+    "Sigmoid",
+    "Tanh",
+    "Relu",
+    "Linear",
+    "Gaussian",
+    "Step",
+    "Sine",
+    "Cosine",
+    "Inverse",
+    "Absolute",
+]
+
+[[mutations]]
+type = "change_weights"
+chance = 0.95
+percent_perturbed = 0.5

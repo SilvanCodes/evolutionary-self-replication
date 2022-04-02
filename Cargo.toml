@@ -1,0 +1,12 @@
+[package]
+name = "evolutionary-self-replication"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+set_genome = "0.5.5"
+favannat = "0.5.1"
+rand = { version = "0.8.5", features = ["small_rng"] }
+gym-rs = "0.2.1"
